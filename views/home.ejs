@@ -1,0 +1,208 @@
+<%- include('../partials/head.ejs') %>
+<%- include('../partials/nav.ejs') %>
+
+
+<section class="container-fluid centerfy hero" id="home-hero">
+    <div class="container">
+        <h1><%=details.name%></h1>
+        <figure>
+            <form id="search-form" action="filter" method="POST">
+                <div>
+                    <label>Make</label>
+                    <input type="text" placeholder="" id="make" name="make"/>
+                </div>
+                <div>
+                    <label>Price</label>
+                    <select name="range">
+                        <option> 10 000.00 - 50 000.00</option>
+                        <option> 50 000.00 - 120 000.00</option>
+                        <option> 120 000.00 - 320 000.00</option>
+                        <option> 320 000.00 - 660 000.00</option>
+                        <option> 660 000.00 - 1 000 000.00</option>
+                        <option> 1 000 000.00 +</option>
+                    </select>
+                </div>
+                <div>
+                    <button onclick="openModal(`event ,functionality`)">Find</button>
+                </div>
+            </form>  
+        </figure>
+    </div>
+</section>
+<!-- HERO END
+NEW ARRIVAL START -->
+<section class="container-fluid" id="arrivals">
+    <div class="conatiner">
+        <h2>NEW ARRIVALS</h2>
+        <div class="row">
+            <article class="col-lg-4 col-md-4">
+                <aside class="centerfy-col">
+                    <div class="img">
+                        <img src="assets/arrivals/mazdacx-3-2.jpg" alt="car-dealership" />
+                    </div>
+                    <h4>Name :<span class="gree-blue">Mazda CX-3</span></h4>
+                    <p>Pre Owned :<span class="gree-blue"> Yes</span></p>
+                    <p>Price : <span class="symbol">R</span><span class="gree-blue"> 52 000.00</span></p>
+                    <p>Colour :<span class="gree-blue"> White</span></p>
+                    <div>
+                        <a href="/specifications/6524fe2712d4f16d1fb6190ef"><button>Read More</button></a>
+                    </div>
+                </aside>
+            </article>
+            <article class="col-lg-4 col-md-4">
+                <aside class="centerfy-col">
+                    <div class="img">
+                        <img src="assets/arrivals/golf-gti3-2.jpg" alt="car-dealership" />
+                    </div>
+                    <h4>Name :<span class="gree-blue">Golf Gti </span></h4>
+                    <p>Pre Owned :<span class="gree-blue"> Yes</span></p>
+                    <p>Price : <span class="symbol">R</span><span class="gree-blue"> 82 000.00</span></p>
+                    <p>Colour :<span class="gree-blue">Dark Grey</span></p>
+                    <div>
+                        <a href="/specifications/6524fe2f712d4f16d1b6190ef"><button>Read More</button></a>
+                    </div>
+                </aside>
+            </article>
+            <article class="col-lg-4 col-md-4">
+                <aside class="centerfy-col">
+                    <div class="img">
+                        <img src="assets/arrivals/audi-sportback-30tf-2.jpg" alt="car-dealership" />
+                    </div>
+                    <h4>Name :<span class="gree-blue">Audi Sportback</span></h4>
+                    <p>Pre Owned :<span class="gree-blue"> Yes</span></p>
+                    <p>Price : <span class="symbol">R</span><span class="gree-blue"> 98 00.00</span></p>
+                    <p>Colour :<span class="gree-blue"> Purple Blue</span></p>
+                    <div>
+                        <a href="/specifications/6524fe2712fd4f16d1b6190efhnoq"><button>Read More</button></a>
+                    </div>
+                </aside>
+            </article>
+        </div>
+    </div>
+</section>
+<!-- NEW ARRIVAL
+ABOUT SECTION -->
+<section class="container-fluid centerfy" id="about-home">
+    <div class="container">
+        <div class="row">
+            <article class="col-lg-6 sol-md-6">
+                <aside class="centerfy-col-sa">
+                    <div class="centerfy-col-sa">
+                        <p class="welcome">WELCOME</p>
+                        <h4><%=details.name%></h4>  
+                    </div>
+                    <div class="centerfy-col-sa">
+                        <p><%=details.descriptions[0]%></p>
+                        <p><%=details.descriptions[1]%></p>
+                    </div>
+                </aside>
+            </article>
+            <article class="col-lg-6 sol-md-6">
+                <figure class="centerfy">
+                    <img src="../assets/dealercar.png" alt=<%=details.name%> />
+                </figure>
+            </article>
+        </div>
+    </div>
+</section>
+<section id="cars">
+    <div class="container" class="container-fluid">
+        <h3>OUR COLLECTIONS AT GLANCE</h3>
+        <div class="row">
+            <% if(data){ data.map( item =>{ %>
+                <article class="col-lg-4 col-md-4">
+                    <aside>
+                        <div class="img">
+                            <img src="assets/arrivals/<%=item.img%>" alt="car-dealership" />
+                        </div>
+                        <h4>Name : <%=item.make%></h4>
+                        <figure class="cetery-col">
+                            <p><span class="make-orange">Owned</span> :  <%=item.preOwned%></p>
+                            <p><span class="make-orange">Price </span> : <span class="symbol">R</span> <%=item.price%><span class="make-orange">.</span>00</p>
+                            <p><span class="make-orange">Colour</span> :  <%=item.coulor%></p>
+                        </figure>
+                        <div>
+                            <a href="/specifications/<%=item.id%>"><button>View Details</button></a>
+                        </div>
+                    </aside>
+                </article>
+            <%})}%>
+        </div>
+    </div>
+</section>
+<!-- FILTER END
+DIVIDER -->
+<section class="container-fluid centerfy" id="big-home">
+    <aside>
+        <h5>CALL US NOW FOR ENQUIRY</h5>
+        <p class="nombre"><%=details.businessNumbers%></p>
+        <figure class="row">
+            <div class="col-lg-4 col-md-4 centerfy-col">
+                <img src="../assets/social/whatsapp.png" alt=<%=details.name%> />
+                <div class="paras">
+                    <p>WHATSAPP</p>
+                    <p><%=details.businessWhatsApp%> </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 centerfy-col">
+                <img src="../assets/social/facebook.png" alt=<%=details.name%> />
+                <div class="paras">
+                    <p>FACEBOOK</p>
+                    <p>www.facebook.com/<%=details.name%></p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 centerfy-col">
+                <img src="../assets/social/email.png" alt=<%=details.name%> />
+                <div class="paras">
+                    <p>EMAIL </p>
+                    <p><%=details.businessEmail%></p>
+                </div>
+            </div>
+        </figure>
+    </aside>
+</section>
+<!-- DIVER END
+NEWS SECTION -->
+<section class="container-fluid" id="testimonials">
+    <div class="container">
+            <div id="hero-carousel" class="carousel slide" data-ride="carousel">
+                <h2>Recent Happy Customer</h2>
+              <div class="carousel-inner">
+                <div class="carousel-item active slide-Item1">
+                   <div class="row">
+                        <article class="col-lg-10 col-md-10 col-sm-12">
+                            <aside class="centerfy-col">
+                                <img src="../assets/testimonials/karabo.jpg" alt="" />
+                                <h3>CONGRATS TO KARABO</h3>
+                                <p><%=details.testo%></p>
+                            </aside>
+                        </article>
+                   </div>
+                </div>
+                <div class="carousel-item slide-Item2">
+                    <article class="col-lg-10 col-md-10 col-sm-12">
+                        <aside class="centerfy-col">
+                            <img src="../assets/testimonials/yvonne.jpg" alt="" />
+                            <h3>CONGRATS TO Yvonne</h3>
+                            <p><%=details.testo%></p>
+                        </aside>
+                    </article>
+                </div>
+                <div class="carousel-item slide-Item3">
+                    <article class="col-lg-10 col-md-10 col-sm-12">
+                        <aside class="centerfy-col">
+                            <img src="../assets/testimonials/joseph.jpg" alt="" />
+                            <h3>CONGRATS TO Joseph</h3>
+                            <p><%=details.testo%></p>
+                        </aside>
+                    </article>
+                </div>
+                
+            </div>
+          </div>
+    </div>
+</section>
+<!-- END TESTO
+MAP SECTION -->
+<%- include('../partials/modals.ejs') %>
+<%- include('../partials/footer.ejs') %>
