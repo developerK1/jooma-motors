@@ -1,0 +1,70 @@
+<section id="easy-contact" class="clr2">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-lg-6">
+				<form role="form" class="#dd3c15 contact-from" action="mail/contact_us.php" Method="POST">
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" class="form-control" id="name" name="firstname" placeholder="Enter Name" required />
+					</div>
+					<div class="form-group">
+						<label for="name">eMAIL</label>
+						<input type="text" class="form-control" id="email" name="email" placeholder="Enter eMail" required />
+					</div>
+					<div class="form-group">
+						<label for="name">Phone Number</label>
+						<input type="tel" class="form-control" id="email" name="phone" placeholder="Phone Number" required />
+					</div>
+					<div class="form-group">
+						<label for="name" required >Message</label>
+						<textarea type="text" rows="5" class="form-control" id="message" name="message" placeholder="How Can We Help You...?"></textarea>
+					</div>
+					<button class="btn btn-default" name="sendMailBtn">Submit</button>
+				</form>
+			</div>
+			<div class= "col-lg-6 col-md-12 adress clr1 centerfy-col">
+				<div class="locationIconAds" style="margin:15px;">
+					<img src="../assets/social/location-icon.jpg" alt="location-icon" style=" border-radius : 20px"/>
+				</div>
+				<h3> Adress </h3>
+				<a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.590450410472!2d25.92156231409561!3d-25.489219983761195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcbadd98bddffbafb!2zMjXCsDI5JzIxLjIiUyAyNcKwNTUnMjUuNSJF!5e1!3m2!1sen!2sza!4v1670401227653!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"><button type="submit" class="btn">DIRECTION</button></a>
+				<p>Crn N4 & Berbardie</p>
+				<p>Zeerust</p>
+				<p>North West</p>
+				<p>2865</p>
+				<p>South Africa</p>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END OF FORM
+START MAP -->
+<footer >
+	<article id="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.590450410472!2d25.92156231409561!3d-25.489219983761195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcbadd98bddffbafb!2zMjXCsDI5JzIxLjIiUyAyNcKwNTUnMjUuNSJF!5e1!3m2!1sen!2sza!4v1670401227653!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  	</article>
+	  <aside class="refer">
+    <div class="full-width centerfy-col">
+			<h3>Refer a Friend</h3>
+			<p>We as <%=details.name %> we prode to be serving with used and brand new cars in Zeerust, around Ramotshere Moiloa district and beyond. Give us a call and we will sort you out, or whatsApp and better. Connect with us on facebook.</p>
+	    <div class="flexy-cen">
+	      <a href="" target="_blank" class="go-to add-more">Share FB</a>
+	    </div>
+		</div>
+  </aside>
+	<a href="#to-top" class="move-up-icon"><div>
+		<img src="../assets/social/black-up.png" />
+	</div></a>
+	<div class="footer-links">
+		<img src="../assets/logo.png" alt="logo" />
+    <p>All Copy Right Reserved <span class="year"></span></p>
+    <p>Designed by <span><a href="www.maobatechsolutions.co.za">Maoba Tech</a></p>
+  </div>
+</footer>
+</main>
+
+<script src="js/jquery.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/costomuzed.js"></script>
+</body>
+</html>

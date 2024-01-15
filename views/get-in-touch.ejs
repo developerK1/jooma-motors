@@ -1,0 +1,42 @@
+<%- include('../partials/head.ejs') %>
+<%- include('../partials/nav.ejs') %>
+
+
+<section class="container-fluid hero">
+    <h1>CONTACT US</h1>
+</section>
+<!-- HERO END
+Contact Cards -->
+<section class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <article class="col-lg-4 col-md-4">
+                <aside>
+                    <img src="assets/social/email.png" />
+                    <h3>EMAIL US</h3>
+                    <a href=""><h4><%=details.businessEmail%></h4></a>
+                </aside>
+            </article>
+            <article class="col-lg-4 col-md-4">
+                <aside>
+                    <img src="assets/social/call.png" />
+                    <h3>CALL US</h3>
+                    <a href=""><h4><%=details.businessNumbers%></h4></a>
+                </aside>
+            </article>
+            <article class="col-lg-4 col-md-4">
+                <aside>
+                    <img src="assets/social/whatsappclear.png" />
+                    <h3>WHATS-APP US</h3>
+                    <a href=""><h4><%=details.businessWhatsApp%></h4></a>
+                </aside>
+            </article>
+        </div>
+    </div>
+</section>
+
+
+
+
+<%- include('../partials/modals.ejs') %>
+<%- include('../partials/footer.ejs') %>

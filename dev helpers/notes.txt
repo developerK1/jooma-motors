@@ -1,0 +1,95 @@
+Make 
+Year
+Gearbox
+Mileage
+Fuel Type
+
+Specifics
+- Colour
+- Doors
+- No. seats
+- Engine Size
+- Top Speed
+- Price
+
+
+
+Engine Size
+-0 - 0.9L
+-1 - 1.4L
+-1.5 - 1.9L
+- 2.0 - 2.4L
+- 2.5 - 2.9L
+- 3.0 - 3.9L
+- 4.0L - 5.0L
+- 6.0L
+- N/A
+
+
+
+
+Top Speed
+- 100kph or less
+- 100kph - 150khp
+- 150kph - 200khp
+- 200kph - 250khp
+- 250khp+
+
+
+
+
+<div class="row">
+    <% data.map( item =>{ %>
+
+
+        <article class="col-lg-3 col-md-4">
+            <aside>
+                <div class="img">
+                    <img src="assets/<%=item.img%>" alt="car-dealership" />
+                </div>
+                <h4>Name : <%=item.make%></h4>
+                <p>Pre Owned :  <%=item.preOwned%></p>
+                <p>Price : <span class="symbol">R</span> <%=item.price%></p>
+                <p>Colour :  <%=item.coulor%></p>
+                <div>
+                    <a href="/specifications/<%=item.id%>"><button>View Details</button></a>
+                </div>
+            </aside>
+        </article>
+    <%})%>
+</div>
+
+
+
+
+
+
+<section class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <article class="col-lg-4 col-md-4">
+
+            </article>
+        </div>
+    </div>
+</section>
+
+
+
+rgb(250, 183, 58)      // ORANGE
+#5eb78b                // Blu-green
+
+
+
+<div class= "col-lg-6 col-md-12 adress clr1 centerfy-col">
+				<div class="locationIconAds" style="margin:15px;">
+					<img src="../assets/social/location-icon.jpg" alt="location-icon" style=" border-radius : 20px"/>
+				</div>
+				<h3> Adress </h3>
+				<a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2663.590450410472!2d25.92156231409561!3d-25.489219983761195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcbadd98bddffbafb!2zMjXCsDI5JzIxLjIiUyAyNcKwNTUnMjUuNSJF!5e1!3m2!1sen!2sza!4v1670401227653!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"><button type="submit" class="btn">DIRECTION</button></a>
+				<p>Crn Gerrit Martz & Coetzee street</p>
+				<p>Zeerust</p>
+				<p>North West</p>
+				<p>2865</p>
+				<p>South Africa</p>
+			</div>
