@@ -16,25 +16,6 @@ app.use(express.urlencoded({extended : true}));
 app.use(express.static('public'))
 
 
-const axios = require('axios');
-
-// Define the URL you want to fetch data from
-const url = 'http://localhost/ajax%20calls/function.php';
-
-// Perform the HTTP GET request using axios
-
-// app.get("/", (req, res)=>{
-//     axios.get(url)
-//   .then((response) => {
-//     res.send(response.data);
-//   })
-//   .catch((error) => {
-//     console.error(`Error fetching data: ${error.message}`);
-//     res.json({data : "failed"})
-//   });
-
-// })
-
 
 //ROUTES
 app.use("/", contentRoute)
