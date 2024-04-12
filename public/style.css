@@ -252,6 +252,7 @@ button {
     text-decoration: underline #5eb78b 6px;
     margin: 13px 0px;
 }
+
 /* =========================
 ARRIVAL
 ========================== */
@@ -311,7 +312,10 @@ ARRIVAL
 /* =========================
 testimonials
 ========================== */
-#testimonials, #hero-carousel {
+#testimonials {
+    min-height: 100vh;
+}
+#hero-carousel {
     height: 100vh;
     background-color: #0c0c0c;
     padding-bottom: 5%;
@@ -793,6 +797,16 @@ MEDIA
         }
         .mobile-view li {
             width: 80%;
+        }
+        #cars h3 {
+            text-align: center;
+        }
+        #testimonials h2, 
+        #testimonials article h3 {
+            font-size: 2rem !important;
+        }
+        #testimonials article p {
+            font-size: 13px !important;
         }
     }
 }
