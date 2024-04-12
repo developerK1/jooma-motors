@@ -655,6 +655,8 @@ SPECIFICS SECTION
 .carousel-control-prev,
 .carousel-control-next {
     background-color: red;
+    height : 50px !important;
+    width : 50px !important
 }
 /* =========================
 HOVER ACTIVE FOCUS 
@@ -766,7 +768,13 @@ MEDIA
         transform: translate(0px, 6px);
         margin: auto;
     }
-
+    
+    @media (max-width : 670px){
+        .footer-links {
+            display : flex;
+            flex-direction: column !important;
+        }
+    }
     @media (max-width : 550px){
         header {
             flex-direction: row;
@@ -807,6 +815,9 @@ MEDIA
         }
         #testimonials article p {
             font-size: 13px !important;
+        }
+        #specifications h4 {
+            font-size: 36px !important;
         }
     }
 }
