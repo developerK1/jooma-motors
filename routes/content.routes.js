@@ -30,16 +30,14 @@ router.route('/faqs').get((req, res) => {
 
 
 
-router.route('/filter').post((req, res) => {
-
+router.route('/search').post((req, res) => {
+    //make = vw
+    //priceRangev
     
+    const makeData = data.filter( car => car.make.toLowerCase() == req.body.brands.toLowerCase() && car.priceRange == req.body.range)
+console.log(req.body.brands.toLowerCase())
 
-    const makeData = data.filter( item => item.make == req.body.make)
-
-    const results = makeData.filter(item => item.priceRange == req.body.range)
-
-
-    res.render("home", {title:"index", data : data, search : results, details : details})
+    res.render("search", {title:"index", data : makeData, search : makeData, details : details})
 });
 
 

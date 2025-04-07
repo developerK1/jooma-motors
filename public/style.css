@@ -688,7 +688,7 @@ MODALS
     display: none;
 }
 .custom-modal article {
-    height: 300px;
+    height: 360px;
     background-color: black;
     color: white;
     text-align: center;
@@ -768,62 +768,99 @@ MEDIA
         transform: translate(0px, 6px);
         margin: auto;
     }
-    
-    @media (max-width : 670px){
-        .footer-links {
-            display : flex;
-            flex-direction: column !important;
-        }
+}
+@media (max-width : 670px){
+    .footer-links {
+        display : flex;
+        flex-direction: column !important;
     }
-    @media (max-width : 550px){
-        header {
-            flex-direction: row;
-            position: relative;
-        }
-        header figure {
-            position: absolute !important;
-            top: 0px !important;
-            height: 100px;
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-        }
-        nav {
-            min-height: 11vh;
-            width: 100%;
-        }
-        .hamburger {
-            display: flex;
-        }
-        nav ul {
-            display: none;
-        }
-        .mobile-view {
-            flex-direction: column;
-            height : 100vh;
-            display: flex !important;
-        }
-        .mobile-view li {
-            width: 80%;
-        }
-        #cars h3 {
-            text-align: center;
-        }
-        #testimonials h2, 
-        #testimonials article h3 {
-            font-size: 2rem !important;
-        }
-        #testimonials article p {
-            font-size: 13px !important;
-        }
-        #specifications h4 {
-            font-size: 36px !important;
-        }
+    body {
+        text-align :center !important:
     }
 }
+@media (max-width : 550px){
+    header {
+        flex-direction: row;
+        position: relative;
+    }
+    header figure {
+        position: absolute !important;
+        top: 0px !important;
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    nav {
+        min-height: 11vh;
+        width: 100%;
+    }
+    .hamburger {
+        display: flex;
+    }
+    nav ul {
+        display: none;
+    }
+    .mobile-view {
+        flex-direction: column;
+        height : 100vh;
+        display: flex !important;
+    }
+    .mobile-view li {
+        width: 80%;
+    }
+    #cars h3 {
+        text-align: center;
+    }
+    #testimonials h2, 
+    #testimonials article h3 {
+        font-size: 2rem !important;
+    }
+    #testimonials article p {
+        font-size: 13px !important;
+    }
+    #specifications h4 {
+        font-size: 36px !important;
+    }
+    #about-home ,
+    #easy-contact .adress  p , 
+    .form-group  , form input , #about-home .welcome,
+    #about-home h4 , .go-back , #specifications , .footer-links{
+        text-align : center!important; 
+    }
+    .refer p {
+        margin: 0px 2px 13px 1px;
+        font-size: 16px;
+    }
+    .refer h3 {
+        font-size: 35px;
+        margin: 5px;
+    }
+    .refer {
+        height : 90vh;
+    }
+    #testimonials .container-fluid {
+        padding-right: 5px !important; 
+        padding-left: 5px !important; 
+    }
+    #testimonials h2 {
+        height: 11vh !important; 
+    }
+           
 
-
-
+}
+@media (max-width : 470px){   
+    #about-home img {
+        width: 100% !important;
+    }
+    #about-home figure {
+        height: 310px;
+    }
+    #arrivals img {
+        height: auto !important;
+        width: 100%;
+    }
+}
 
 /* =========================m
 JAVASCXRIPT ADDED CLASSES 
