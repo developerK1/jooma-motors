@@ -4,11 +4,52 @@
     <h1>THIS IS SEARCH COMPONENT</h1>
     <div class="container" class="container-fluid">
         <fiure>
-            <form id="search-form" action="/filter/" method="POST">
+            <form id="search-form" action="filter" method="POST">
                 <div>
                     <label>Make</label>
-                    <input type="text" placeholder="" id="make" name="make"/>
-                </div>
+                    <select name="brands" id="car-brands">
+                        <option value="">-- Select a car brand --</option>
+                        <option value="audi">Audi</option>
+                        <option value="bmw">BMW</option>
+                        <option value="chery">Chery</option>
+                        <option value="chevrolet">Chevrolet</option>
+                        <option value="chrysler">Chrysler</option>
+                        <option value="citroen">Citroën</option>
+                        <option value="daihatsu">Daihatsu</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="ford">Ford</option>
+                        <option value="gwm">GWM (Great Wall Motors)</option>
+                        <option value="honda">Honda</option>
+                        <option value="hyundai">Hyundai</option>
+                        <option value="isuzu">Isuzu</option>
+                        <option value="jaguar">Jaguar</option>
+                        <option value="jeep">Jeep</option>
+                        <option value="kia">Kia</option>
+                        <option value="land-rover">Land Rover</option>
+                        <option value="lexus">Lexus</option>
+                        <option value="mahindra">Mahindra</option>
+                        <option value="mazda">Mazda</option>
+                        <option value="mercedes benz">Mercedes Benz</option>
+                        <option value="mini">MINI</option>
+                        <option value="mitsubishi">Mitsubishi</option>
+                        <option value="nissan">Nissan</option>
+                        <option value="opel">Opel</option>
+                        <option value="peugeot">Peugeot</option>
+                        <option value="porsche">Porsche</option>
+                        <option value="renault">Renault</option>
+                        <option value="skoda">Škoda</option>
+                        <option value="ssangyong">SsangYong</option>
+                        <option value="subaru">Subaru</option>
+                        <option value="suzuki">Suzuki</option>
+                        <option value="tata">Tata</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="volkswagen">Volkswagen</option>
+                        <option value="volvo">Volvo</option>
+                      </select>
+               
+                    </div>
+
+    
                 <div>
                     <label>Price</label>
                     <select name="range">
@@ -21,9 +62,9 @@
                     </select>
                 </div>
                 <div>
-                    <button>Find</button>
+                    <button onclick="openModal(`event ,functionality`)">Find</button>
                 </div>
-            </form>
+            </form>  
 
 
         </fiure>
@@ -34,7 +75,7 @@
                     <article class="col-lg-4 col-md-4">
                         <aside>
                             <div class="img">
-                                <img src="assets/<%=item.img%>" alt="car-dealership" />
+                                <img src="../assets/<%=item.img%>" alt="car-dealership" />
                             </div>
                             <h4>Name : <%=item.make%></h4>
                             <p>Pre Owned :  <%=item.preOwned%></p>

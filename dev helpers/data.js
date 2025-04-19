@@ -23,7 +23,7 @@ const drivers = [
   },
   {
     id: "6524fe27f12d4f16d1b6190ef2" ,
-    make : "Renualt",
+    make : "Renault",
     name : "Renualt Dustin",
     year : 2020,
     coulor : "Dark Grey",
@@ -262,7 +262,7 @@ const drivers = [
   },
   {
     id: "6524fe2g712d4f14t16d1b6190ef" ,
-    make : "Mercedes Benze",
+    make : "Mercedes Benz",
     name : "Mercedes C200",
     year : 2018,
     coulor : "Silver Grey",
@@ -284,8 +284,8 @@ const drivers = [
   },
   {
     id: "6b524fe2712d4f16f735d1b6190ef" ,
-    make : "Mercedes Benze",
-    name : "Mercedes Benze X-Class",
+    make : "Mercedes Benz",
+    name : "Mercedes Benz X-Class",
     year : 2019,
     coulor : "White ",
     engine : "2.8 L",
@@ -301,8 +301,8 @@ const drivers = [
       gearbox : "Manual",
       doors : 4,
     },
-    heroImg : "benze-x-class-1.jpg",
-    assosImgs : ["benze-x-class-1.jpg","benze-x-class-2.jpg","benze-x-class-3.jpg"]
+    heroImg : "Benz-x-class-1.jpg",
+    assosImgs : ["benz-x-class-1.jpg","benze-x-class-2.jpg","benz-x-class-3.jpg"]
   },
   {
     id: "6524fe2712d4f16d1b6190e394sf f" ,
@@ -328,58 +328,6 @@ const drivers = [
   },
   
 ]
-
-
-// const generateSql = () => {
-//   let sql = "";
-
-//   drivers.forEach( driver =>{
-//     sql+= `('${driver.location}', '${driver.imgper}' , '${driver.imgcar}' , '${driver.name}', '${driver.car}'),`
-//   })
-// console.log(sql)
-
-// }
-// generateSql()
-
-
-/*
-
-
-
- {
-    id: "6524fe2712d4fgn16d1b6190efu" ,
-    make : "Ford Fortuner",
-    name : "Ford Fortuner",
-    year : 2012,
-    coulor : "Silver Grey",
-    engine : "3.0 L",
-    preOwned : "Yes",
-    img : "ford-fortuner-2.jpg",
-    price : "120 000",
-    mileage : "53 156",
-    priceRange : "50 000.00 - 120 000.00",
-    specifications : {
-      TopSpeed : "100 and more",
-      seats : 4,
-      fuelType : "Diesel",
-      gearbox : "Automatic",
-      doors : 4,
-    },
-    heroImg : "ford-fortuner-1.jpg",
-    assosImgs : ["ford-fortuner-1.jpg","ford-fortuner-2.jpg","ford-fortuner-3.jpg"]
-  },
- 
-
-*/
-
-
-// const data =  [{"id":1,"location":"Mafikeng - Litenburg","imgper":"/assets/person.png","imgcar":"/assets/audi.jpg","name":"Karabo","car":"Mazda","pasword":""},{"id":2,"location":"Zeerust - Rutenburg","imgper":"/assets/person.png","imgcar":"/assets/audi.jpg","name":"Karabo","car":"Mazda","pasword":""},{"id":3,"location":"Rusternburg - Pretoria","imgper":"/assets/person.png","imgcar":"/assets/audi.jpg","name":"Karabo","car":"Mazda","pasword":""},{"id":4,"location":"Mafikeng - Zeerust","imgper":"/assets/person.png","imgcar":"/assets/audi.jpg","name":"Karabo","car":"Mazda","pasword":""},{"id":5,"location":"Phokeng - Mogwase","imgper":"/assets/person.png","imgcar":"/assets/audi.jpg","name":"Karabo","car":"Mazda","pasword":""},{"id":6,"location":"Brits - Pretoria","imgper":"/assets/person.png","imgcar":"/assets/audi.jpg","name":"Karabo","car":"Mazda","pasword":""}]
-
-
-
-
-
-
 
 
 module.exports = drivers;

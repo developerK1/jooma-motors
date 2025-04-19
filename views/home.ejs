@@ -6,10 +6,48 @@
     <div class="container">
         <h1><%=details.name%></h1>
         <figure>
-            <form id="search-form" action="filter" method="POST">
+            <form id="search-form" action="search" method="POST">
                 <div>
                     <label>Make</label>
-                    <input type="text" placeholder="" id="make" name="make"/>
+                    <select name="brands" id="car-brands">
+                        <option value="">-- Select a car brand --</option>
+                        <option value="audi">Audi</option>
+                        <option value="bmw">BMW</option>
+                        <option value="chery">Chery</option>
+                        <option value="chevrolet">Chevrolet</option>
+                        <option value="chrysler">Chrysler</option>
+                        <option value="citroen">Citroën</option>
+                        <option value="daihatsu">Daihatsu</option>
+                        <option value="fiat">Fiat</option>
+                        <option value="ford">Ford</option>
+                        <option value="gwm">GWM (Great Wall Motors)</option>
+                        <option value="honda">Honda</option>
+                        <option value="hyundai">Hyundai</option>
+                        <option value="isuzu">Isuzu</option>
+                        <option value="jaguar">Jaguar</option>
+                        <option value="jeep">Jeep</option>
+                        <option value="kia">Kia</option>
+                        <option value="land-rover">Land Rover</option>
+                        <option value="lexus">Lexus</option>
+                        <option value="mahindra">Mahindra</option>
+                        <option value="mazda">Mazda</option>
+                        <option value="mercedes benz">Mercedes Benz</option>
+                        <option value="mini">MINI</option>
+                        <option value="mitsubishi">Mitsubishi</option>
+                        <option value="nissan">Nissan</option>
+                        <option value="opel">Opel</option>
+                        <option value="peugeot">Peugeot</option>
+                        <option value="porsche">Porsche</option>
+                        <option value="renault">Renault</option>
+                        <option value="skoda">Škoda</option>
+                        <option value="ssangyong">SsangYong</option>
+                        <option value="subaru">Subaru</option>
+                        <option value="suzuki">Suzuki</option>
+                        <option value="tata">Tata</option>
+                        <option value="toyota">Toyota</option>
+                        <option value="volkswagen">Volkswagen</option>
+                        <option value="volvo">Volvo</option>
+                      </select>
                 </div>
                 <div>
                     <label>Price</label>
